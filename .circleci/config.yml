@@ -1,0 +1,14 @@
+version: 2.1
+
+orbs:
+  architect: giantswarm/architect@0.8.12
+
+workflows:
+  build:
+    jobs:
+      - architect/go-build:
+          name: go-build
+          binary: kuba-test
+          filters:
+            tags:
+              only: /^v.*/

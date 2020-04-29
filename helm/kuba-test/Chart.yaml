@@ -1,0 +1,7 @@
+apiVersion: v1
+name: kuba-test
+description: >-
+  A shell of an operator used to test architect, releases, opsctl etc.
+home: https://github.com/giantswarm/kuba-test
+version: [[ .Version ]]
+appVersion: [[ .AppVersion ]]
